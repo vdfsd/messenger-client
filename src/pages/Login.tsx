@@ -11,7 +11,7 @@ export const Login = () => {
         <p className="py-4 text-indigo-800 text-center">
           Don't have an account?
           <Link
-            to={`registration`}
+            to={`/registration`}
             className="text-slate-200  hover:text-slate-400 transition duration-200 mx-2"
           >
             Sign up
