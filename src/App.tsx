@@ -1,6 +1,15 @@
 import { Outlet } from "react-router-dom"
-import toast, { Toaster } from "react-hot-toast"
+import { Toaster } from "react-hot-toast"
+import { useNavigate } from "react-router-dom"
+import { useEffect } from "react"
 export const App = () => {
+  const navigate = useNavigate()
+  useEffect(() => {
+    const token = window.localStorage.getItem("token")
+    if (!token) {
+      navigate("/login")
+    }
+  }, [])
   return (
     <div>
       <Outlet />
