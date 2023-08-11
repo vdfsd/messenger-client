@@ -8,4 +8,4 @@ instanceAxios.interceptors.request.use((config) => {
   config.headers.Authorization = window.localStorage.getItem("token")
 
   return config
-}) //добавление в каждый запрос токена в хедерс
+})
