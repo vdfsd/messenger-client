@@ -10,7 +10,7 @@ export const Registration = () => {
         <p className="py-4 text-indigo-800 text-center">
           Already an account?
           <Link
-            to={`/login`}
+            to={`login`}
             className="text-slate-200  hover:text-slate-400 transition duration-200 mx-2"
           >
             Sign in
