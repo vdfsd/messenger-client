@@ -7,10 +7,11 @@ import { removeChats } from "../../features/chatsSlice"
 import { removeMessages } from "../../features/messagesSlice"
 import { IoArrowBackOutline } from "react-icons/io5"
 import { setActiveChatPage } from "../../features/pageSlice"
+import img1 from "../../assets/avatars/i1.jpg"
 
 export const CurrentUserBoard = () => {
   const { user } = useAppSelector((state) => state.auth)
-  const [src, setSrc] = useState<string>("")
+  // const [src, setSrc] = useState<string>("")
 
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
@@ -21,11 +22,11 @@ export const CurrentUserBoard = () => {
     dispatch(removeMessages())
     navigate("/login")
   }
-  useEffect(() => {
-    if (user !== null && user?.avatar !== undefined) {
-      setSrc(`/assets/${user?.avatar}.jpg`)
-    }
-  }, [user])
+  // useEffect(() => {
+  //   if (user !== null && user?.avatar !== undefined) {
+  //     setSrc(`/assets/${user?.avatar}.jpg`)
+  //   }
+  // }, [user])
 
   return (
     <div className="w-full flex items-center justify-between py-[10px] px-4 bg-indigo-950 shadow-md shadow-indigo-600 hover:shadow-indigo-600 hover:shadow-lg sticky top-0 trasition duration-200">
@@ -38,7 +39,7 @@ export const CurrentUserBoard = () => {
         <div className="min-w-[50px] h-[50px] rounded-full mr-2 flex items-center justify-center">
           {user !== null && user?.avatar !== undefined && (
             <img
-              src={src}
+              src={img1}
               alt="avatar"
               className="min-w-[50px] h-[50px] rounded-full"
             />
