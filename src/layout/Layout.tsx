@@ -61,12 +61,12 @@ export const Layout = () => {
       dispatch(addCurrentChat(params.chatId))
     }
   }, [])
-  useEffect(() => {
-    const token = window.localStorage.getItem("token")
-    if (!token) {
-      navigate("/login")
-    }
-  }, [])
+  // useEffect(() => {
+  //   const token = window.localStorage.getItem("token")
+  //   if (!token) {
+  //     navigate("/login")
+  //   }
+  // }, [])
 
   useEffect(() => {
     if (idUser !== undefined && params.chatId !== undefined) {
