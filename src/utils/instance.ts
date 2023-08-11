@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const instanceAxios = axios.create({
-  baseURL: "http://localhost:4000/api/",
+  baseURL: "https://messenger-server-black.vercel.app/api/",
   headers: { "Content-Type": "application/json" },
 })
 instanceAxios.interceptors.request.use((config) => {
