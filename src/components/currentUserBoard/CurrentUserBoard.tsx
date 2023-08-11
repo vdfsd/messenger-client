@@ -23,7 +23,7 @@ export const CurrentUserBoard = () => {
   }
   useEffect(() => {
     if (user !== null && user?.avatar !== undefined) {
-      setSrc(`src/assets/avatars/${user?.avatar}.jpg`)
+      setSrc(`/${user?.avatar}.jpg`)
     }
   }, [user])
 
