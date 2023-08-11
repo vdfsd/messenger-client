@@ -85,7 +85,6 @@ const messagesSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(sendMessage.fulfilled, (state, action) => {
-        //   state.messages = action.payload.messages
         state.loading = false
         state.error = null
       })

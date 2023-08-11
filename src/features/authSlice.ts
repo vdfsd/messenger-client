@@ -128,8 +128,6 @@ const authSlice = createSlice({
       state.error = "error"
     })
     builder.addCase(fetchLogin.fulfilled, (state, action) => {
-      // state.user = action.payload.user
-      // state.token = action.payload.token
       state.loading = false
       state.error = null
     })
