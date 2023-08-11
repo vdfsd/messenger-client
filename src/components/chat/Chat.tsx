@@ -52,7 +52,7 @@ export const Chat = () => {
                 >
                   {user?.avatar && currentChatImg.avatar && (
                     <img
-                      src={`src/assets/avatars/${
+                      src={`https://messenger-server-black.vercel.app/images/avatars/${
                         m.fromSelf ? user?.avatar : currentChatImg.avatar
                       }.jpg`}
                       alt="avatar"

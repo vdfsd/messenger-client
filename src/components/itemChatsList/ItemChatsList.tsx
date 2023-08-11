@@ -32,7 +32,7 @@ export const ItemChatsList: FC<IItemChatsListProps> = ({ chat }) => {
         <div className="flex justify-start items-center">
           <div className="min-w-[50px] h-[50px] bg-indigo-950 rounded-full mr-2 flex items-center justify-center">
             <img
-              src={`src/assets/avatars/${chat?.avatar && chat?.avatar}.jpg`}
+              src={`https://messenger-server-black.vercel.app/images/avatars/${chat?.avatar}.jpg`}
               alt="avatar"
               className="min-w-[50px] h-[50px] rounded-full"
             />
