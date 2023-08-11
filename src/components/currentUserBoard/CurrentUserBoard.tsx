@@ -39,7 +39,7 @@ export const CurrentUserBoard = () => {
         <div className="min-w-[50px] h-[50px] rounded-full mr-2 flex items-center justify-center">
           {user !== null && user?.avatar !== undefined && (
             <img
-              src={img1}
+              src={`https://messenger-server-black.vercel.app/images/avatars/${user?.avatar}.jpg`}
               alt="avatar"
               className="min-w-[50px] h-[50px] rounded-full"
             />
