@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 body {
   background-color: #111827;
-  font-family: "Rubik Wet Paint", cursive;
+  font-family: "Righteous", cursive;
 }
 
 .container {
